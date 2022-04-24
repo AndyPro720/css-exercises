@@ -11,7 +11,6 @@ body {
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
-  flex: 1 1 auto;
   align-items: center;
   justify-content: center;
 }
@@ -28,22 +27,18 @@ body {
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
   padding: 16px;
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 
-.head {
-  display: flex;
-  gap: 10px;
-}
+
 
 .data {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  gap: 10px;
 }
 .text {
-  max-width: 400px;
+  max-width: 430px;
 }
 
 .buttons {
@@ -61,6 +56,7 @@ body {
   height: 42px;
   border-radius: 50%;
   display: flex;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
 }
